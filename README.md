@@ -8,6 +8,13 @@
 
 由於 JConsole 相對於此網站還在測試中，我移除掉 installation 資料夾的存在檢查，每次 clone 回去當作新網站安裝起來即可。
 
+## Composer
+
+``` bash
+$ cd ./sms
+$ composer update
+```
+
 ## Joomlatools Composer Installer
 
 我們用 [Joomla Composer](https://github.com/joomlatools/joomla-composer) 套件來做 Ezset 的安裝，詳細設定可以參考 [composer.json](sms/composer.json)
