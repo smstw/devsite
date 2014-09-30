@@ -1,48 +1,12 @@
 {
-	"minimum-stability": "beta",
+	"minimum-stability": "dev",
 	"require" : {
-		"sms/dev" : "*",
-		"asika/jconsole" : "1.*",
-		"sms/ezset" : "*"
+		
 	},
-	"repositories": [
-		{
-			"type": "package",
-			"package": {
-				"name": "sms/dev",
-				"type" : "composer-plugin",
-				"version": "1.0.4",
-				"dist": {
-					"url": "https://github.com/smstw/sms-uni-dev/archive/master.zip",
-					"type": "zip"
-				},
-				"require": {
-					"composer-plugin-api": "1.0.0"
-				},
-				"extra": {
-					"class": "SMS\\Composer\\ExtensionInstallerPlugin"
-				},
-				"autoload": {
-					"psr-4" : {
-						"SMS\\" : "src/"
-					}
-				}
-			}
-		},
-		{
-			"type": "package",
-			"package": {
-				"name": "sms/ezset",
-				"type": "joomlatools-installer",
-				"version": "1.0.1",
-				"dist": {
-					"url": "https://github.com/asikart/ezset/archive/1.0.2.zip",
-					"type": "zip"
-				},
-				"require": {
-					"joomlatools/installer": "*"
-				}
-			}
-		}
-	]
+	"require-dev" : {
+		"smstw/php-code-sniffer" : "*",
+		"squizlabs/php_codesniffer": "~1.0@stable",
+		"phpunit/phpunit": "~3.0@stable",
+		"phpunit/dbunit": "~1.0@stable"
+	}
 }
